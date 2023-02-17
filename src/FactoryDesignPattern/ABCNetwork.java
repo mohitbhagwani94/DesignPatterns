@@ -1,7 +1,7 @@
 package FactoryDesignPattern;
 
-public class ABCNetwork extends CellularPlan{
+public class ABCNetwork extends CellularPlan {
     public void getRate() {
-        rate =1.50;
+        rate = 1.50;
     }
 }

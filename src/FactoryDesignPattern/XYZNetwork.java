@@ -1,4 +1,7 @@
 package FactoryDesignPattern;
 
-public class XYZNetwork {
+public class XYZNetwork extends CellularPlan{
+    public void getRate(){
+        rate = 1.50;
+    }
 }
