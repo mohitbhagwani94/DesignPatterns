@@ -15,11 +15,24 @@ public class Director {
                 .color("black");
 
     }
+
     public static void main(String arg[]) {
         Director director = new Director();
         CarBuilder builder = new CarBuilder();
         director.buildBugatti(builder);
         Car car = builder.build();
         System.out.println(car);
+
+        director.buildLambo(builder);
+        Car car2 = builder.build();
+        System.out.println(car2);
+
+        CarSchemaBuilder schema = new CarSchemaBuilder();
+        director.buildBugatti(schema);
+        CarSchema carSchema = schema.build();
+
+        System.out.println(carSchema);
+
+
     }
 }

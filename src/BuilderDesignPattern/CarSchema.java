@@ -12,4 +12,9 @@ public class CarSchema {
         this.model = model;
         this.color = color;
     }
+
+    @Override
+    public String toString(){
+        return "id="+ this.id+" ,brand="+this.brand+" ,color="+color;
+    }
 }

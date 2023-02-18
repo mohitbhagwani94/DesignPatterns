@@ -27,6 +27,10 @@ public class CarSchemaBuilder implements Builder {
     @Override
     public Builder brand(String brand) {
         this.brand = brand;
-        return null;
+        return this;
+    }
+
+    public CarSchema build(){
+        return new CarSchema(id,color,model,brand);
     }
 }

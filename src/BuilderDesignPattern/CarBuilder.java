@@ -30,8 +30,5 @@ public class CarBuilder implements Builder {
         return new Car(id, brand, model, color);
     }
 
-    public String toString(){
-        return "id="+ this.id+" ,brand="+this.brand+" ,color="+color;
-    }
 
 }
