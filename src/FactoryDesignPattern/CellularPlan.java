@@ -9,5 +9,8 @@ abstract class CellularPlan {
         System.out.println("minutes:"+minutes+" rate"+rate);
 
         System.out.println(minutes * rate);
+
+
     }
+
 }

@@ -9,7 +9,7 @@ public class SelectNetworkFactory {
             return new ABCNetwork();
         } else if (planType.equalsIgnoreCase("xyzNetwork")) {
             return new XYZNetwork();
-        } else if (planType.equalsIgnoreCase("pqrNetwork")) {
+        } else if ("pqrNetwork".equalsIgnoreCase(planType)) {
             return new PQRNetwork();
         }
         return null;
