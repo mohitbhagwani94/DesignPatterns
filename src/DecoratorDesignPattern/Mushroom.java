@@ -1,4 +1,4 @@
-package DesignPattern;
+package DecoratorDesignPattern;
 
 public class Mushroom extends ToppingDecorator{
     PizzaBase bp;

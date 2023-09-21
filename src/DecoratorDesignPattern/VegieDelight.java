@@ -1,4 +1,4 @@
-package DesignPattern;
+package DecoratorDesignPattern;
 
 public class VegieDelight extends PizzaBase{
 
