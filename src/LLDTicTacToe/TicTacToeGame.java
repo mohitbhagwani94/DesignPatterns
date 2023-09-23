@@ -5,11 +5,9 @@ import LLDTicTacToe.Modal.PieceType;
 import LLDTicTacToe.Modal.Players;
 import LLDTicTacToe.Modal.PlayingPieceO;
 import LLDTicTacToe.Modal.PlayingPieceX;
-import javafx.util.Pair;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 
 public class TicTacToeGame {
@@ -39,7 +37,7 @@ public class TicTacToeGame {
             while(noWinner){
                 Players playersTurn = players.removeFirst();
                 gameBoard.printBoard();
-                if(gameBoard.IsThereAFreeCell()){
+                if(!gameBoard.IsThereAFreeCell()){
                     noWinner = false;
                     continue;
                 }
