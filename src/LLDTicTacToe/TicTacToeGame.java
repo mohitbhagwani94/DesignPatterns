@@ -69,24 +69,28 @@ public class TicTacToeGame {
         boolean diagonalMatch = true;
         boolean antidiagonalMatch = true;
 
+        //Checking for rows
         for(int i =0;i< gameBoard.size;i++){
             if(gameBoard.board[row][i]==null || gameBoard.board[row][i].pieceType!=pieceType ){
                 rowMatch =false;
             }
         }
 
+        // checking for column
         for(int i=0;i< gameBoard.size;i++){
             if(gameBoard.board[i][col]==null || gameBoard.board[i][col].pieceType!=pieceType){
                 colMatch = false;
             }
         }
 
+        // checking for diagonal
         for(int i=0,j=0;i<gameBoard.size;i++,j++){
             if(gameBoard.board[i][j]==null||gameBoard.board[i][j].pieceType!=pieceType){
                 diagonalMatch = false;
             }
         }
 
+        //checking for anti-diagonal
         for(int i=0,j=gameBoard.size-1;i<gameBoard.size;i++,j--){
             if(gameBoard.board[i][j]==null || gameBoard.board[i][j].pieceType!=pieceType){
                 antidiagonalMatch = false;
